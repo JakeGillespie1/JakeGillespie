@@ -1,3 +1,4 @@
+<!--Jake Gillespie/Last Edit:4/12/2022-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +8,7 @@
         <meta name="author" content="" />
         
         <title>Jake Gillespie - Brigham Young University</title>
-        
+        <link href="styles/mystyles.css" type="text/css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -15,36 +16,38 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="styles/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">JRG</a>
+                <a class="navbar-brand" href="html/Resume.html"><span class="JRG">JRG-Resume</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
-                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Education.html">Education</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Experience.html">Experiencee</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Skills.html">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="html/About.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="html/Education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="html/Experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="html/Skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="html/Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="html/tableau.html">Live Dash</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/img/daniela-cuevas-t7YycgAoVSw-unsplash.jpg')">
+        <header class="masthead" style="background-image: url('images/daniela-cuevas-t7YycgAoVSw-unsplash.jpg')" alt="Hot Air Baloon Maddness!">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>Jake Gillespie</h1>
-                            <span class="subheading">Student, Teacher, Learner, Leader</span>
+                            <h1 class="headcol">Jake Gillespie</h1>
+                            <span class="subheading subheadcol">Student, Teacher, Learner, Leader</span>
                         </div>
                     </div>
                 </div>
@@ -55,10 +58,26 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <!-- Post preview-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Education</h2>
-                            <h3 class="post-subtitle"><p>Lone-Star College System, Associate of General Studies</p><p>Brigham Young University, BS in Global Supply Chain Management</p></h3>
+                        <a href="html/About.html">
+                            <h2 class="post-title color Bolder underline">About Me</h2>
+                            <h3 class="post-subtitle"><p>Jake's Story | How He Got to Today</p></h3>
+                        </a>
+                        <!--<p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on August 24, 2022
+                        </p>-->
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!--Post Preview-->
+                    <div class="post-preview">
+                        <a href="html/Education.html">
+                            <h2 class="post-title color Bolder underline">Education</h2>
+                            <h3 class="post-subtitle"><p>Jake's Education at LSC System</p><p>Jake's Education at BYU</p></h3>
                         </a>
                         <!--<p class="post-meta">
                             Posted by
@@ -70,9 +89,9 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Experience</h2>
-                            <h3 class="post-subtitle"><p>Teaching Assistant - Dept. of Physics and Astronomy, Brigham Young University</p><p>Brigham Young University Personal Tutor - Brigham Young University, NCAA</p><p>Full-Time Student, Brigham Young University</p><p>Full-time Volunteer Representative</p></h3>
+                        <a href="html/Experience.html">
+                            <h2 class="post-title color Bolder underline">Experience</h2>
+                            <h3 class="post-subtitle"><p>Jake's Work Experience</p><p>Jake's Volunteer Experience</p></h3>
                         </a>
                         <!--<p class="post-meta">
                             Posted by
@@ -84,9 +103,9 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Skills</h2>
-                            <h3 class="post-subtitle"><p>Entry-level: SQL, VBA in Excel, Web Development, Tableau</p><p>Proficient: Microsoft Excel, Organization, Leadership, Communication, Teaching, Public Speaking, Time-management</p></h3>
+                        <a href="html/Skills.html">
+                            <h2 class="post-title color Bolder underline">Skills</h2>
+                            <h3 class="post-subtitle"><p>Jake's Soft Skills</p><p>Jake's Technical Skills</p></h3>
                         </a>
                         <!--<p class="post-meta">
                             Posted by
@@ -98,9 +117,24 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Personal</h2>
-                            <h3 class="post-subtitle"><p>Eagle Scout | Boy Scouts of America | Dec 2013</p><p>President and other leadership roles in various youth groups and organizations</p><p>Devoted to leadership and service | National Honor Society | The Salvation Army</p><p>Summa Cum Laude graduate from Cypress Ranch HS | Jun 2018</p></h3>
+                        <a href="html/Resume.html">
+                            <h2 class="post-title color Bolder underline">Resume</h2>
+                            <h3 class="post-subtitle"><p>Jake's Full Resume</p></h3>
+                        </a>
+                        <!--<p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 18, 2022
+                        </p>-->
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a>
+                            <h2 class="post-title color Bolder underline">Awards/Other</h2>
+                            <h3 class="post-subtitle"><p>Eagle Scout | Boy Scouts of America | Dec 2013</p><p>President and other leadership roles in various youth groups and organizations</p><p>Summa Cum Laude Graduate from Cypress Ranch High School | Jun 2018</p>
+                            </h3>
                         </a>
                         <!--<p class="post-meta">
                             Posted by
@@ -121,30 +155,30 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
+                            <!--<li class="list-inline-item">
+                                <!--<a href="#!">
                                     <!--<span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                                     </span>-->
-                                </a>
-                            </li>
+                                <!--</a>
+                            </li>-->
                             <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="https://www.facebook.com/jake.gillespie.92123" target="_blank" title="Jake Gillespie's Facebook Page">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
+                            <!--<li class="list-inline-item">
+                                <a href="#!">-->
                                     <!--<span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                                     </span>-->
-                                </a>
-                            </li>
+                                <!--</a>
+                            </li>-->
                         </ul>
                         <div class="small text-center text-muted fst-italic">Copyright &copy; Jake Gillespie 2022</div>
                     </div>
