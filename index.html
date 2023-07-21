@@ -177,7 +177,17 @@
                                 <!--</a>
                             </li>-->
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Jake Gillespie 2023</div>
+                        <div class="small text-center text-muted fst-italic"> Copyright &copy; Jake Gillespie<div id = "currentYear"> 
+                            <script>
+                            function getCurrentYear() {
+                              const currentDate = new Date();
+                              const currentYear = currentDate.getFullYear();
+                              return currentYear;
+                            }
+                            // Update the content of the "currentYear" div with the current year
+                            document.getElementById('currentYear').innerText = getCurrentYear();
+                          </script>
+                        </div>
                     </div>
                 </div>
             </div>
