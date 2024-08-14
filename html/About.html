@@ -57,7 +57,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Hometown: Houston, TX | Age: 23 | Birthplace: Henderson, NV | Fun-Facts: I lived in Canada for the space of two years, and one of my all-time favorite movies is Forrest Gump!</p>
+                        <p>Hometown: Houston, TX | Age: <div id="currentAge"></div> | Birthplace: Henderson, NV | Fun-Facts: I lived in Canada for the space of two years, and one of my all-time favorite movies is Forrest Gump!</p>
                         <p>Today: I am a TA for a Machine Learning class. I have a demonstrated history of working with and leading diverse groups of people with varied backgrounds and skills. I am skilled in communication, code, customer service, training, and problem-solving. I am also a strong educational professional currently working on a Master's degree focused on information systems from the Marriott School of Business at Brigham Young University. I am open to new opportunities for learning and growing and am an intrinsically driven, hard-working individual. I want to make an impact for good in this world by working and collaborating with those around me.</p> 
                         <p>For more information, or to connect with Jake Gillespie, here is his LinkedIn page:
                             <a href="https://www.linkedin.com/in/jake-gillespie1/" target="_blank" title="LinkedIn Page about Jake Gillespie">
@@ -117,8 +117,15 @@
                               const currentYear = currentDate.getFullYear();
                               return currentYear;
                             }
+
+                            function getCurrentAge()
+                            {
+                                const currentAge = currentDate.getFullYear() - 2000;
+                                return currentAge;
+                            }
                             // Update the content of the "currentYear" div with the current year
                             document.getElementById('currentYear').innerText = getCurrentYear();
+                            document.getElementById('currentAge').innerText = getCurrentAge();
                           </script>
                         </div>                    </div>
                 </div>
