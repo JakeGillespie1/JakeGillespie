@@ -27,17 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollPos = currentTop;
     });
 })
-
-function getCurrentYear() 
-  {
+function getCurrentYear() {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     return currentYear;
-  }
-
-function getCurrentAge()
-  {
-      const currentDate = new Date();
-      const currentAge = currentDate.getFullYear() - 2000;
-      return currentAge;
   }
