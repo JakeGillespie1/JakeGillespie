@@ -1,0 +1,78 @@
+<!-- Site Head -->
+<div id="head-placeholder"></div>
+<!-- Site Header -->
+<div id="header-placeholder"></div>
+<!-- Site Navigation -->
+<div id="navigation-placeholder"></div>
+<script aria-hidden="true">
+    fetch('Head.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('#head-placeholder').innerHTML = html;
+        });
+    fetch('Header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('#header-placeholder').innerHTML = html;
+            // Ensure the proper html is inserted for the page
+            window.addEventListener('load', () => {
+                document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">Education</h1><span class=\"subheading subheadcol\">\"...the more that you learn, the more places you\'ll go.\" <br> -Dr. Seuss</span>"
+                document.getElementById('header-img').style = "background-image: url('./images/Education-img.jpg')"
+                document.getElementById('header-img').alt = "Y Mountain in Provo, Utah"
+            });
+        });
+    fetch('Navigation.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('#navigation-placeholder').innerHTML = html;
+        });
+    fetch('Footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('#footer-placeholder').innerHTML = html;
+            // Ensure the functions are called after the HTML is inserted
+            window.addEventListener('load', () => {
+            document.getElementById('currentYear').textContent = getCurrentYear();
+            document.getElementById('currentAge').textContent = getCurrentAge();
+            });
+        });
+</script>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Over the course of my college experience I have acquired several technical skills in engineering, business, technology, data analytics, and code. The high value I place on learning has been fundamental to the development of my soft skills like hard work, dedication, passion, grit, empathy, service, and compassion.</p>
+                        <p>I seek to learn through qualified sources and from my own experience. I value the ideals behind seeking truth and using my knowledge and education to be a force for good in this world.</p>
+                    <ol>
+                        <li>Lone-Star College System
+                            <ul>
+                                <li>Sep 2016-Dec 2018</li>
+                                <li>Associate of General Studies</li>
+                                <li>GPA | 3.82</li>
+                                <li><a href="https://www.lonestar.edu/" target="_blank" title="Lone Star College's Home Page">lonestar.edu</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <img src=./images/Lone%20Star%20College_CyFair.jpg width=600 height=300 alt="Lone-Star College -- Cy-Fair Campus">
+                        <br>
+                        <li>Brigham Young University
+                            <ul>
+                                <li>Anticipated Graduation | Dec 2025</li>
+                                <li>Masters of Information Systems Management</li>
+                                <li>Bachelors of Science in Information Systems</li>
+                                <li>GPA | 4.0</li>
+                                <li><a href="https://www.byu.edu/" target="_blank" title="Brigham Young University's Home Page">byu.edu</a></li>
+                            </ul>
+                        </li>
+                    <img src=./images/BYU%20Campus.jpg width=600 height=300 alt="BYU Campus">
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <!-- Bring in the proper JS -->
+    <script src="./js/scripts.js"></script>
+    </body>
+    </html>
