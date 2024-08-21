@@ -15,11 +15,10 @@
         .then(html => {
             document.querySelector('#header-placeholder').innerHTML = html;
             // Ensure the proper html is inserted for the page
-            window.addEventListener('load', () => {
-                document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">Jake Gillespie</h1><span class=\"subheading subheadcol\">Student, Teacher, Learner, Leader</span>"
-                document.getElementById('header-img').style = "background-image: url('./images/Index-img.jpg')"
-                document.getElementById('header-img').alt = "Cloudy Mountains"
-
+            document.addEventListener('DOMContentLoaded', () => {
+                document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">Jake Gillespie</h1><span class=\"subheading subheadcol\">Student, Teacher, Learner, Leader</span>";
+                document.getElementById('header-img').style.backgroundImage = "url('./images/Index-img.jpg')";
+                document.getElementById('header-img').alt = "Cloudy Mountains";
             });
         });
     fetch('Navigation.html')
