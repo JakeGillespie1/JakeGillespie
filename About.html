@@ -9,15 +9,14 @@
         .then(response => response.text())
         .then(html => {
             document.querySelector('#head-placeholder').innerHTML = html;
-            // Ensure the proper html is inserted for the page
-            document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">About Me</h1><span class=\"subheading subheadcol\">\"The harder the conflict, the greater the triumph.\" <br> -President George Washington</span>"
-            document.getElementById('header-img').style = "background-image: url('./images/About-img.jpg')"
-            document.getElementById('header-img').alt = "Houston Texas Skyline"
         });
     fetch('Header.html')
         .then(response => response.text())
         .then(html => {
             document.querySelector('#header-placeholder').innerHTML = html;
+            document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">Jake Gillespie</h1><span class=\"subheading subheadcol\">Student, Teacher, Learner, Leader</span>";
+            document.getElementById('header-img').style = "background-image: url('./images/Index-img.jpg')";
+            document.getElementById('header-img').alt = "Cloudy Mountains";
         });
     fetch('Navigation.html')
         .then(response => response.text())
@@ -29,10 +28,8 @@
         .then(html => {
             document.querySelector('#footer-placeholder').innerHTML = html;
             // Ensure the functions are called after the HTML is inserted
-            window.addEventListener('load', () => {
             document.getElementById('currentYear').textContent = getCurrentYear();
             document.getElementById('currentAge').textContent = getCurrentAge();
-            });
         });
 </script>
 <!-- Main Content-->

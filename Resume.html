@@ -14,9 +14,9 @@
         .then(response => response.text())
         .then(html => {
             document.querySelector('#header-placeholder').innerHTML = html;
-            document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">Jake Gillespie</h1><span class=\"subheading subheadcol\">Student, Teacher, Learner, Leader</span>";
-            document.getElementById('header-img').style = "background-image: url('./images/Index-img.jpg')";
-            document.getElementById('header-img').alt = "Cloudy Mountains";
+            document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">Resume</h1><span class=\"subheading subheadcol\">\"The credit belongs to the man who is actually in the arena.\" <br> -Theodore Roosevelt</span>";
+            document.getElementById('header-img').style = "background-image: url('./images/Resume-img.jpg')";
+            document.getElementById('header-img').alt = "Rocket Ship Lift Off";
         });
     fetch('Navigation.html')
         .then(response => response.text())
