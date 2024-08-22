@@ -10,11 +10,9 @@
         .then(html => {
             document.querySelector('#head-placeholder').innerHTML = html;
             // Ensure the proper html is inserted for the page
-            window.addEventListener('load', () => {
-                document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">About Me</h1><span class=\"subheading subheadcol\">\"The harder the conflict, the greater the triumph.\" <br> -President George Washington</span>"
-                document.getElementById('header-img').style = "background-image: url('./images/About-img.jpg')"
-                document.getElementById('header-img').alt = "Houston Texas Skyline"
-            });
+            document.getElementById('header-text').innerHTML = "<h1 class=\"headcol\">About Me</h1><span class=\"subheading subheadcol\">\"The harder the conflict, the greater the triumph.\" <br> -President George Washington</span>"
+            document.getElementById('header-img').style = "background-image: url('./images/About-img.jpg')"
+            document.getElementById('header-img').alt = "Houston Texas Skyline"
         });
     fetch('Header.html')
         .then(response => response.text())
